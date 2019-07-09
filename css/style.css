@@ -1,0 +1,61 @@
+.jumbotron-extend {
+    position: relative;
+    height: 50%;
+    min-height: 100%;
+    background: url(../images/Rocky-Production.png) no-repeat center center;
+    background-size:300px;
+    padding:16rem 1rem;
+    opacity: 0.6;
+}
+
+.profile{
+    border: 1px solid #aaa;
+    width: center;
+    text-align: center;
+  }
+
+.border{
+    font-size:20px;
+    color: white;
+    background-color: darkgray;
+
+}
+
+.display-1{   
+    font-family: 'Comfortaa', cursive;
+font-family: 'Poiret One', cursive;
+
+}
+
+.head{
+    background-color: darkgray;
+}
+ 
+#form{
+    padding:10px 350px;
+}
+
+.top-image{
+    text-align:;
+}
+
+.btn-top {
+    margin: 2rem auto;
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+    background-color: darkgray;
+    box-shadow: 0px 0px 4px 0px #aaa;
+    border-radius: 50%;
+    font-size: 2rem;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Poiret One', cursive;
+
+  
+    cursor: pointer;
+  }
+
+  .soundcloud{
+      text-align:center;
+  }

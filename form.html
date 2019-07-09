@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Form</title>
+    <!-- BootstrapのCSS読み込み -->
+    <link href="css2/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js2/scrolltop.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="js2/bootstrap.min.js"></script>
+
+    <link href="./css/style.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+
+      <div class="head">
+          <div class="container">
+            <nav class="navbar px-0 navbar-expand-lg navbar-dark">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a href="index2.html" class="pl-md-0 p-3 text-white">Home</a>
+                  <a href="about.html" class="p-3 text-decoration-none text-white">About</a>
+                  <a href="form.html" class="p-3 text-decoration-none text-white">Contact</a>
+                </div>
+              </div>
+            </nav>
+      
+          </div>
+        </div>
+         
+        <br>
+
+        <center>ご質問・お問い合わせはこちらより</center>
+
+    <form id="form" action="json/request.json">
+      <div class="form-group">
+        <label for="inputName">Name</label>
+        <input type="text" class="form-control" id="inputName" name="name">
+      </div>
+      <div class="form-group">
+        <label for="inputEmail">Email</label>
+        <input type="email" class="form-control" id="inputEmail" name="email">
+      </div>
+      <div class="form-group">
+        <label for="inputComment">Comment</label>
+        <textarea class="form-control" id="inputComment" name="comment" rows="6"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    
+  </body>
+</html>
