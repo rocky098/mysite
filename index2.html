@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rocky Production</title>
+    <!-- BootstrapのCSS読み込み -->
+    <link href="css2/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
+    <script>
+    jQuery.easing.quart = function (x, t, b, c, d) {
+            return -c * ((t=t/d-1)*t*t*t - 1) + b;
+        };
+         
+        $(function(){
+            jQuery('.scroll').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                    var $target = jQuery(this.hash);
+                    $target = $target.length && $target || jQuery('[name=' + this.hash.slice(1) +']');
+                    if ($target.length) {
+                    var targetOffset = $target.offset().top;
+                    jQuery('html,body').animate({ scrollTop: targetOffset }, 1200, 'quart');
+                    return false;
+                    }
+                }
+            });
+        });
+
+        $(function(){
+    $('a img').hover(function(){
+    $(this).attr('src', $(this).attr('src').replace('_off', '_on'));
+    }, function(){
+        if (!$(this).hasClass('currentPage')) {
+        $(this).attr('src', $(this).attr('src').replace('_on', '_off'));
+        }
+    });
+});
+
+
+        </script>
+
+    
+    <!-- BootstrapのJS読み込み -->
+    <script src="js2/bootstrap.min.js"></script>
+
+    <link href="./css/style.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Poiret+One&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+      <div class="head">
+          <div class="container">
+            <nav class="navbar px-0 navbar-expand-lg navbar-dark" >
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <!--画像がなぜ真ん中に来ないのか-->
+         <div class="top-image"><img src="images/rockyproduction.png" alt="Logo" width="10%" height="auto"></div>
+
+                  <a href="index2.html" class="pl-md-0 p-3 text-white">Home</a>
+                  <a href="about.html" class="p-3 text-decoration-none text-white">About</a>
+                  <a href="form.html" class="p-3 text-decoration-none text-white">Contact</a>
+                  
+                 
+              </div>
+
+                </div>
+
+                
+            </nav>
+           
+          </div>
+        </div>
+      
+      
+      
+      
+        <div class="jumbotron bg-dark text-white mb-0 radius-0">
+          <div class="container">
+      
+            <h1 class="display-1 text-light">Rocky production
+              <span class="fa fa-headphones text-warning display-icon"></span>
+            </h1>
+            <span class="lead">Dancehall music production</span>
+      
+            <div class="mt-4">
+                <a href="https://www.instagram.com/rockyokinawa/"><img src="button/insta_on.png" alt="ボタン" style="
+                  padding: 0 20px"></a> 
+                
+              
+      
+              <a href="https://twitter.com/Rocky_okinawa" class="link"><img src="button/twitter_on.png" alt="ボタン" /></a> 
+        
+              </a>
+            </div>
+      
+          </div>
+        </div>
+      
+        <p class="border">-Recommend-</p>
+        <div class="soundcloud"><iframe width="80%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/641891967&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe></div>
+        <br>
+        <p class="border">-Brand new-</p>
+      
+        <div class="row">
+          <div class="col-3">
+            <div class="card" style="width: 18rem;">
+              <img src="images/murder game.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Murder Gamce</h5>
+                <p class="card-text">Rick-C feat. Platy</p>
+                <a href="https://artist.landr.com/music/800739419230" target="_blank" class="btn btn-primary">Go</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card" style="width: 18rem;">
+              <img src="images/Trami riddim.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Trami Riddim</h5>
+                <p class="card-text">U-Dou Platy</p>
+                <a href="https://artist.landr.com/music/628810026173" target="_blank" class="btn btn-primary">Go</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card" style="width: 18rem;">
+              <img src="images/BAKUON-HIKOU.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Backuon Hikou</h5>
+                <p class="card-text">Micky Rich</p>
+                <a href="https://artist.landr.com/music/800739634343" target="_blank" class="btn btn-primary">Go</a>
+              </div>
+            </div>
+      
+          </div>
+      
+          <div class="col-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/はだかのおおさま.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">はだかの王様</h5>
+                  <p class="card-text">Newman</p>
+                  <a href="https://artist.landr.com/music/800739488717" target="_blank" class="btn btn-primary">Go</a>
+                </div>
+              </div>
+        
+            </div>
+            <br>
+            <p class="border">-Brand new-</p>
+            <!--改行するには？-->
+            
+      
+        </div>
+
+        <div class='btn-top'>Top</div>
+      
+      
+        <div class="container py-5">
+          <h1>Big Up</h1>
+      
+          <p>Thank you for downloading this theme. If you have trouble or find a bug, please open an issue on GitHub:<br>
+            <a href="https://github.com/HackerThemes/theme-machine">https://github.com/HackerThemes/theme-machine</a></p>
+      
+      
+        </div>
+      
+        
+      
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+          crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+          integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+          crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+          integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+          crossorigin="anonymous"></script>
+  </body>
+
+
+</html>
